@@ -28,7 +28,7 @@ model.compile(optimizer='sgd', loss='categorical_crossentropy', metrics=['accura
 # load the weights already learned
 model.load_weights('mnist_weights_epoch300.h5')
 
-# save learned weights
+# evaluate the model on test set 
 score = model.evaluate(x_test, y_test, batch_size=100)
 
 print("\nTest loss: ", score[0])
