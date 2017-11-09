@@ -25,7 +25,7 @@ y_test = keras.utils.to_categorical(y_test, 10)
 # create model
 model = Sequential()
 model.add(Dense(16, input_dim=784, activation='relu'))
-model.add(Dense(16, input_dim=784, activation='relu'))
+model.add(Dense(16, activation='relu'))
 model.add(Dense(10, activation='softmax'))
 
 # compile the model
